@@ -49,9 +49,9 @@
             label = "SYM";
 
             bindings = <
-                               &kp GRAVE      &kp DQT        &kp RA(LS(SEMI)) &kp LBRC                     &kp RBRC       &kp BACKSLASH  &kp PIPE       &kp LT
+                &trans         &kp GRAVE      &kp DQT        &kp RA(LS(SEMI)) &kp LBRC                     &kp RBRC       &kp BACKSLASH  &kp PIPE       &kp LT         &trans
                 &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR       &kp LPAR                     &kp RPAR       &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
-                               &kp TILDE      &kp SQT        &kp UNDERSCORE                 &trans                        &kp MINUS      &kp PLUS       &kp EQUAL
+                &trans         &kp TILDE      &kp SQT        &kp UNDERSCORE   &trans        &trans         &trans         &kp MINUS      &kp PLUS       &kp EQUAL      &trans
                                                              &kp LBKT         &kp RBKT                     &trans         &trans
             >;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
