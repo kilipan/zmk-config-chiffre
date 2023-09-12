@@ -68,7 +68,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         wireless {
-            label = "BLE;
+            label = "BLE";
 
             bindings = <
                 &none          &bt BT_CLR     &none          &none          &bt BT_PRV                    &bt BT_NXT     &none          &none          &none          &none
