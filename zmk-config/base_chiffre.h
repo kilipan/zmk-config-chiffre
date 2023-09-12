@@ -15,6 +15,7 @@
 #define NAV 2
 #define SYM 3
 #define FUN 4
+#define BLE 5
 
 // &lt {
 //     quick_tap_ms = <170>;
