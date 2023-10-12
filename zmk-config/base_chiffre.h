@@ -32,6 +32,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp S &kp C &kp H>;
+        macro_shifted_sch: macro_shifted_sch {
+            label = "Macro_Sch";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LS(S) &kp C &kp H>;
+        };
         };
     };
 };
@@ -54,7 +60,7 @@ combo_##NAME { \
         COMBO(sch, &macro_sch, 1 3)
         COMBO(slash, &kp SLASH, 28 29)
         COMBO(dash, &kp MINUS, 27 28)
-        COMBO(enter, &kp ENTER, 27 28 29)
+        COMBO(enter, &kp ENTER, 27 29)
         COMBO(esc, &kp ESC, 22 23)
 /* parentheticals */
         COMBO(lbrc, &kp LBRC, 1 11)
@@ -72,6 +78,36 @@ combo_##NAME { \
         COMBO(bspc, &kp BSPC, 6 7)
         COMBO(del, &kp DEL, 7 8)
         COMBO(delword, &kp LC(BSPC), 6 8)
+/* alternative shifting */
+        COMBO(Sq, &kp LS(Q), 2 3 24)
+        COMBO(Sz, &kp LS(Z), 21 22 24)
+        COMBO(Sv, &kp LS(V), 1 2 24)
+        COMBO(Ssch, &macro_shifted_sch, 0 2 24)
+        COMBO(Sw, &kp LS(W), 1 31)
+        COMBO(Sf, &kp LS(F), 2 31)
+        COMBO(Sp, &kp LS(P), 3 31)
+        COMBO(Sb, &kp LS(B), 4 31)
+        COMBO(Sj, &kp LS(J), 5 34)
+        COMBO(Sl, &kp LS(L), 6 34)
+        COMBO(Su, &kp LS(U), 7 34)
+        COMBO(Sy, &kp LS(Y), 8 34)
+        COMBO(Sr, &kp LS(R), 10 31)
+        COMBO(Ss, &kp LS(S), 11 31)
+        COMBO(St, &kp LS(T), 12 31)
+        COMBO(Sh, &kp LS(H), 13 31)
+        COMBO(Sk, &kp LS(K), 14 31)
+        COMBO(Sx, &kp LS(X), 15 34)
+        COMBO(Sn, &kp LS(N), 16 34)
+        COMBO(Sa, &kp LS(A), 17 34)
+        COMBO(Si, &kp LS(I), 18 34)
+        COMBO(So, &kp LS(O), 19 34)
+        COMBO(Sc, &kp LS(C), 21 31)
+        COMBO(Sg, &kp LS(G), 22 31)
+        COMBO(Sd, &kp LS(D), 23 31)
+        COMBO(Sm, &kp LS(M), 27 34)
+        COMBO(Scomma, &kp SEMI, 28 34)
+        COMBO(Sdot, &kp COLON, 29 34)
+        COMBO(Se, &kp LS(E), 19 33)
     };
 };
 
