@@ -88,7 +88,7 @@ combo_##NAME { \
         COMBO(Sq, &kp LS(Q), 2 3 32)
         COMBO(Sz, &kp LS(Z), 21 22 32)
         COMBO(Sv, &kp LS(V), 1 2 32)
-        COMBO(Ssch, &macro_shifted_sch, 0 2 32)
+        COMBO(Ssch, &macro_shifted_sch, 1 3 32)
         COMBO(Sw, &kp LS(W), 1 32)
         COMBO(Sf, &kp LS(F), 2 32)
         COMBO(Sp, &kp LS(P), 3 32)
