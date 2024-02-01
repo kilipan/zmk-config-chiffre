@@ -16,10 +16,10 @@
             label = "APT";
 
             bindings = <
-                &kp V          &kp W          &kp F          &kp P          &kp B                           &kp J          &kp L          &kp U          &kp Y          &kp SQT
+                &none          &kp W          &kp F          &kp P          &kp B                           &kp J          &kp L          &kp U          &kp Y          &none
                 &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K                      &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
                 &kp Z          &kp C          &kp G          &kp D          &kp C_VOL_DN     &kp C_MUTE     &kp C_VOL_UP   &kp M          &comsem        &dotcol        &kp FSLH
-                                                             &my_lt NUM SQT &my_lt NAV SPACE                &my_lt SYM E   &my_lt FUN ENTER
+                                                             &my_lt NUM SQT &my_lt NAV SPACE                &my_lt SYM E   &my_lt FUN TAB
             >;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -38,8 +38,8 @@
             label = "NAV";
 
             bindings = <
-                &trans         &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN                 &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT     &trans
-                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE                   &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
+                &trans         &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN                 &kp C_VOL_UP   &kp LC(LEFT)   &kp LC(RIGHT)  &kp INSERT     &trans
+                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE                   &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
                 &trans         &kp HOME       &kp PG_DN      &kp END         &trans         &trans        &trans         &kp HOME       &kp PG_UP      &kp END        &trans
                                                              &trans          &trans                       &trans         &trans
             >;
@@ -60,8 +60,8 @@
             label = "FUN";
 
             bindings = <
-                &trans         &bootloader    &trans         &trans         &trans                        &kp F12        &kp F7         &kp F8         &kp F9         &trans
-                &trans         &trans         &trans         &trans         &trans                        &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
+                &trans         &bootloader    &trans         &bt BT_CLR     &bt BT_PRV                    &kp F12        &kp F7         &kp F8         &kp F9         &trans
+                &trans         &trans         &trans         &trans         &bt BT_NXT                    &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
                 &trans         &trans         &trans         &trans         &trans         &trans         &trans         &kp F1         &kp F2         &kp F3         &trans
                                                              &mo BLE        &trans                        &trans         &trans
             >;
